@@ -1,0 +1,28 @@
+GET http://localhost:8080/products/daf73cfa-4404-4556-8e30-3f14a8538daa
+
+###
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+    "name": "Product 3",
+    "price": 1000
+}
+
+###
+PUT http://localhost:8080/products/daf73cfa-4404-4556-8e30-3f14a8538daa
+Content-Type: application/json
+
+{
+    "name": "Product 3 atualizado",
+    "price": 2000
+}
+
+###
+DELETE http://localhost:8080/products/daf73cfa-4404-4556-8e30-3f14a8538daa
+Content-Type: application/json
+
+###
+GET http://localhost:8080/products
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjAxOTIxNzgsInN1YiI6IjI3MGQxMjE1LTI5YjMtNGFhYS04NTlmLWQwZWQ5Mjk3NTUxZSJ9.fxK9A8G7B05XM-7aOdGKFy-TCsakHUhCQL6BWLo2cK4

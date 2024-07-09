@@ -1,0 +1,18 @@
+###
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+    "name": "User 1",
+    "email": "jp.1998.jpd@icloud.com",
+    "password": "teste123"
+}
+
+###
+POST http://localhost:8080/users/generate_token
+Content-Type: application/json
+
+{
+    "email": "jp.1998.jpd@icloud.com",
+    "password": "teste123"
+}
